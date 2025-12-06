@@ -112,16 +112,15 @@
         .team-image {
             transition: transform 0.3s ease;
         }
-
     </style>
-    
+
     <!-- Hero Section -->
     <section class="hero-gradient text-white py-20">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6">Who I Am</h1>
                 <p class="text-xl text-blue-100 mb-8">Discover our story, our mission, and the passionate team behind
-                    Wat Damnak Learning Centre - dedicated to transforming lives through education since 2005.</p>
+                    JSF Scholarship - dedicated to transforming lives through education since 2005.</p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="#history"
                         class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
@@ -145,37 +144,44 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2" data-aos="fade-right">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6">Our Identity & Purpose</h2>
-                    <p class="text-gray-600 dark:text-gray-300 mb-6 text-lg">Wat Damnak Learning Centre is more than just an educational
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6">Our Identity & Purpose
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 text-lg">JSF Scholarship is more than
+                        just an educational
                         institution - we are a community dedicated to nurturing young minds and empowering future
                         leaders.</p>
-                    <p class="text-gray-600 dark:text-gray-300 mb-8">Founded in 2005, we have grown from a small community initiative to a
+                    <p class="text-gray-600 dark:text-gray-300 mb-8">Founded in 2005, we have grown from a small community
+                        initiative to a
                         respected learning center that has impacted thousands of students in Siem Reap and beyond.</p>
 
                     <div class="grid grid-cols-2 gap-6">
                         <div class="text-center">
-                            <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <div
+                                class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                                 <i class="fas fa-heart text-blue-600 dark:text-blue-300 text-2xl"></i>
                             </div>
                             <h3 class="font-semibold text-gray-800 dark:text-white">Passionate</h3>
                             <p class="text-gray-600 dark:text-gray-400 text-sm">About education</p>
                         </div>
                         <div class="text-center">
-                            <div class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <div
+                                class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                                 <i class="fas fa-hand-holding-heart text-green-600 dark:text-green-300 text-2xl"></i>
                             </div>
                             <h3 class="font-semibold text-gray-800 dark:text-white">Committed</h3>
                             <p class="text-gray-600 dark:text-gray-400 text-sm">To our community</p>
                         </div>
                         <div class="text-center">
-                            <div class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <div
+                                class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                                 <i class="fas fa-lightbulb text-purple-600 dark:text-purple-300 text-2xl"></i>
                             </div>
                             <h3 class="font-semibold text-gray-800 dark:text-white">Innovative</h3>
                             <p class="text-gray-600 dark:text-gray-400 text-sm">In our approach</p>
                         </div>
                         <div class="text-center">
-                            <div class="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <div
+                                class="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                                 <i class="fas fa-users text-yellow-600 dark:text-yellow-300 text-2xl"></i>
                             </div>
                             <h3 class="font-semibold text-gray-800 dark:text-white">Inclusive</h3>
@@ -235,7 +241,7 @@
                                 <i class="fas fa-seedling mr-3 text-green-300"></i>
                                 Our Beginnings
                             </h3>
-                            <p class="text-blue-100 mb-6">Wat Damnak Learning Centre started in 2005 as a small
+                            <p class="text-blue-100 mb-6">JSF Scholarship started in 2005 as a small
                                 initiative within the temple grounds, offering basic English classes to local children
                                 who had limited access to education.</p>
                             <p class="text-blue-100">With just 2 teachers and 35 students, we began our mission to
@@ -271,7 +277,8 @@
                                         2005</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Foundation</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Wat Damnak Learning Centre established with 35 students and 2
+                                <p class="text-gray-600 dark:text-gray-300">JSF Scholarship established with
+                                    35 students and 2
                                     teachers, offering basic English classes.</p>
                             </div>
                         </div>
@@ -283,7 +290,8 @@
                                         2010</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Expansion</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Moved to larger facility and expanded programs to include
+                                <p class="text-gray-600 dark:text-gray-300">Moved to larger facility and expanded programs
+                                    to include
                                     computer literacy and vocational training.</p>
                             </div>
                         </div>
@@ -295,7 +303,8 @@
                                         2015</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Recognition</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Received recognition from Ministry of Education for excellence
+                                <p class="text-gray-600 dark:text-gray-300">Received recognition from Ministry of Education
+                                    for excellence
                                     in community-based education.</p>
                             </div>
                         </div>
@@ -307,7 +316,8 @@
                                         2020</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Digital Transformation</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Implemented digital learning platforms and expanded STEM
+                                <p class="text-gray-600 dark:text-gray-300">Implemented digital learning platforms and
+                                    expanded STEM
                                     programs to prepare students for the future.</p>
                             </div>
                         </div>
@@ -319,7 +329,8 @@
                                         2023</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Today</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Serving 500+ students with 25+ qualified teachers and
+                                <p class="text-gray-600 dark:text-gray-300">Serving 500+ students with 25+ qualified
+                                    teachers and
                                     comprehensive educational programs.</p>
                             </div>
                         </div>
@@ -334,7 +345,8 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Mission & Vision</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Guiding principles that shape our educational
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Guiding principles that shape our
+                    educational
                     approach and future aspirations.</p>
             </div>
 
@@ -345,24 +357,28 @@
                         <i class="fas fa-bullseye text-blue-600 dark:text-blue-300 text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Our Mission</h3>
-                    <p class="text-gray-600 dark:text-gray-300">To provide quality, accessible education that empowers students with
+                    <p class="text-gray-600 dark:text-gray-300">To provide quality, accessible education that empowers
+                        students with
                         knowledge, skills, and values to become responsible global citizens and leaders in their
                         communities.</p>
                 </div>
 
                 <div class="vision-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover" data-aos="fade-up"
                     data-aos-delay="200">
-                    <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-6">
+                    <div
+                        class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-eye text-green-600 dark:text-green-300 text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Our Vision</h3>
-                    <p class="text-gray-600 dark:text-gray-300">To be a leading educational institution in Cambodia that transforms lives
+                    <p class="text-gray-600 dark:text-gray-300">To be a leading educational institution in Cambodia that
+                        transforms lives
                         through innovative learning, cultural preservation, and community development.</p>
                 </div>
 
                 <div class="values-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover" data-aos="fade-up"
                     data-aos-delay="300">
-                    <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-6">
+                    <div
+                        class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-heart text-purple-600 dark:text-purple-300 text-2xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Our Values</h3>
@@ -394,7 +410,8 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Meet Our Team</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Passionate educators and staff dedicated to making a
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Passionate educators and staff
+                    dedicated to making a
                     difference in students' lives.</p>
             </div>
 
@@ -410,7 +427,8 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Leading our centre with vision and dedication for over 10 years,
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Leading our centre with vision and dedication for
+                            over 10 years,
                             Sokha is passionate about educational accessibility.</p>
                         <div class="flex space-x-3">
                             <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
@@ -434,7 +452,8 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">With 15 years of teaching experience, Maly develops our
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">With 15 years of teaching experience, Maly develops
+                            our
                             curriculum and ensures educational excellence.</p>
                         <div class="flex space-x-3">
                             <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
@@ -458,7 +477,8 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">An engineer turned educator, Rithy brings innovation and hands-on
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">An engineer turned educator, Rithy brings
+                            innovation and hands-on
                             learning to our science and technology programs.</p>
                         <div class="flex space-x-3">
                             <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
@@ -482,7 +502,8 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Fluent in 4 languages, Sopheap leads our language department with
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Fluent in 4 languages, Sopheap leads our language
+                            department with
                             cultural sensitivity and pedagogical expertise.</p>
                         <div class="flex space-x-3">
                             <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">

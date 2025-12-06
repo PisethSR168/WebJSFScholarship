@@ -3,10 +3,10 @@
     <div class="max-w-7xl xl:max-w-[96rem] mx-auto px-4 py-3 flex items-center justify-between">
         <div class="flex items-center gap-4">
             <a href="#" class="flex items-center gap-3">
-                <img src="assets{{ '/images/scms.png' }}" alt="logo" class="size-14 rounded-full border" />
+                <img src="{{ asset('assets/images/joel_logo.png') }}" alt="logo" class="size-14 rounded-full border" />
                 <div class="hidden sm:block">
-                    <div class="font-semibold text-lg">Wat Damnak</div>
-                    <div class="text-xs text-gray-500 dark:text-gray-400">Learning Centre</div>
+                    <div class="font-semibold text-lg">JSF</div>
+                    <div class="text-xs text-gray-500 dark:text-gray-400">Scholarship</div>
                 </div>
             </a>
         </div>

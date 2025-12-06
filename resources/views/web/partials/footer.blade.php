@@ -7,14 +7,14 @@
             <div class="space-y-4">
                 <div class="flex items-center space-x-4">
                     <div class="w-14 h-14 rounded-full flex items-center justify-center shadow-lg bg-white/10">
-                        <img src="assets{{ '/images/scms.png' }}" alt="logo"
+                        <img src="{{ asset('assets/images/joel_logo.png') }}" alt="logo"
                             class="w-12 h-12 rounded-full border border-blue-300" />
                     </div>
                     <div>
                         <h2 class="gradient-text text-2xl font-bold">
-                            Wat Damnak
+                            JSF
                         </h2>
-                        <p class="text-sm mb-0 text-blue-100 dark:text-slate-200">Learning Centre</p>
+                        <p class="text-sm mb-0 text-blue-100 dark:text-slate-200">Scholarship</p>
                     </div>
                 </div>
                 <p class="text-blue-100 dark:text-slate-200 mb-0 leading-relaxed">
@@ -143,31 +143,31 @@
                             class="text-blue-100 dark:text-slate-200 hover:text-white dark:hover:text-orange-500 transition-all duration-300 flex items-center group">
                             <i
                                 class="fas fa-map-marker-alt text-blue-400 dark:text-slate-100 mr-3 text-sm group-hover:scale-110 transition-transform"></i>
-                            Wat Damnak, Siem Reap<br>Cambodia
+                            JSF Scholarship, Siem Reap<br>Cambodia
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+85512345678"
+                        <a href="tel:+85512225131"
                             class="text-blue-100 dark:text-slate-200 hover:text-white dark:hover:text-orange-500 transition-all duration-300 flex items-center group">
                             <i
                                 class="fas fa-phone text-blue-400 dark:text-slate-100 mr-3 text-sm group-hover:scale-110 transition-transform"></i>
-                            +855 (0) 12 345 678
+                            +855 12 22 51 31
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+85512345679"
+                        <a href="tel:+85512225131"
                             class="text-blue-100 dark:text-slate-200 hover:text-white hover:text-blue-600 dark:hover:text-orange-500 transition-all duration-300 flex items-center group">
                             <i
                                 class="fas fa-phone text-blue-400 dark:text-slate-100 mr-3 text-sm group-hover:scale-110 transition-transform"></i>
-                            +855 (0) 12 345 679
+                            +855 12 22 51 31
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:info@watdamnak.edu.kh"
+                        <a href="mailto:neouwannen3@gmail.com"
                             class="text-blue-100 dark:text-slate-200 hover:text-white dark:hover:text-orange-500 transition-all duration-300 flex items-center group">
                             <i
                                 class="fas fa-envelope text-blue-400 dark:text-slate-100 mr-3 text-sm group-hover:scale-110 transition-transform"></i>
-                            info@watdamnak.edu.kh
+                            neouwannen3@gmail.com
                         </a>
                     </li>
                 </ul>
@@ -178,7 +178,7 @@
         <div class="pt-8 border-t border-blue-700/50 dark:border-slate-600/50">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <p class="text-slate-200 dark:text-slate-100 text-sm">
-                    © {{ date('Y') }} Wat Damnak Learning Centre. All rights reserved.
+                    © {{ date('Y') }} JSF Scholarship. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#"

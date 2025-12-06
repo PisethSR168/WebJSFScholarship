@@ -11,7 +11,7 @@
                         alt="slide" class="w-full h-full object-cover" />
                     <div class="absolute inset-0 bg-black/30 flex items-center">
                         <div class="max-w-4xl mx-auto px-6 text-white" data-aos="fade-up">
-                            <h1 class="text-3xl md:text-5xl font-bold">Wat Damnak Learning Centre</h1>
+                            <h1 class="text-3xl md:text-5xl font-bold">JSF Scholarship</h1>
                             <p class="mt-3 max-w-2xl">A community place for learning, culture and togetherness.</p>
                             <div class="mt-4">
                                 <a href="#about" class="inline-block px-4 py-2 bg-indigo-600 rounded-md">Learn
@@ -60,7 +60,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-aos="fade-up">Latest News</h2>
             <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up"
                 data-aos-delay="100">
-                Stay updated with the latest happenings and achievements at Wat Damnak Learning Centre
+                Stay updated with the latest happenings and achievements at JSF Scholarship
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -320,15 +320,15 @@
     <!-- About Us Section -->
     <section id="about" class="py-16 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">About Wat Damnak
-                Learning Centre</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">About JSF Scholarship
+            </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div data-aos="fade-right">
                     <h3 id="history" class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Our History
                     </h3>
                     <p class="text-gray-700 dark:text-gray-300 mb-6">
-                        Founded in 2005, Wat Damnak Learning Centre has been at the forefront of providing quality
+                        Founded in 2005, JSF Scholarship has been at the forefront of providing quality
                         education
                         to students in our community. Our journey began with a small group of dedicated educators
                         and has
@@ -394,8 +394,7 @@
                     data-fancybox="gallery" class="overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in"
                     data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                        alt="Classroom"
-                        class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                        alt="Classroom" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
                 </a>
 
                 <a href="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"

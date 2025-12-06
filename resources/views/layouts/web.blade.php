@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Wat Damnak Learning Centre</title>
+    <title>JSF Scholarship</title>
     <!-- SwiperJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -22,9 +22,11 @@
         body {
             font-family: sans-serif;
         }
+
         .swiper-slide {
             width: auto;
         }
+
         /* Offcanvas transitions */
         .offcanvas {
             transform: translateX(-100%);
@@ -102,10 +104,11 @@
             <div class="max-w-7xl xl:max-w-[96rem] mx-auto px-4 py-3 flex items-center justify-between">
                 <div class="flex items-center gap-4">
                     <a href="{{route('web.home')}}" class="flex items-center gap-3">
-                        <img src="assets{{ '/images/scms.png' }}" alt="logo" class="size-14 rounded-full border" />
+                        <img src="{{ asset('assets/images/joel_logo.png') }}" alt="logo"
+                            class="size-14 rounded-full border" />
                         <div class="hidden sm:block">
-                            <div class="font-semibold text-lg">Wat Damnak</div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400">Learning Centre</div>
+                            <div class="font-semibold text-lg">JSF</div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">Scholarship</div>
                         </div>
                     </a>
                 </div>
@@ -118,8 +121,7 @@
                                 class="border-b-2 border-transparent hover:border-orange-500 hover:text-orange-500 px-3 py-2 transition-colors duration-200">Home</a>
                         </li>
                         <li class="group relative">
-                            <a href="{{ route('web.about') }}"
-                                class="border-b-2 border-transparent hover:border-orange-500 hover:text-orange-500 px-3 py-2 
+                            <a href="{{ route('web.about') }}" class="border-b-2 border-transparent hover:border-orange-500 hover:text-orange-500 px-3 py-2 
                                 transition-colors duration-200">Who
                                 i am</a>
                         </li>
@@ -196,10 +198,11 @@
             <!-- Offcanvas Header -->
             <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
                 <div class="flex items-center gap-3">
-                    <img src="assets{{ '/images/scms.png' }}" alt="logo" class="size-12 rounded-full border" />
+                    <img src="{{ asset('assets/images/joel_logo.png') }}" alt="logo"
+                        class="size-12 rounded-full border" />
                     <div>
-                        <div class="font-semibold text-lg">Wat Damnak</div>
-                        <div class="text-xs text-gray-500 dark:text-gray-400">Learning Centre</div>
+                        <div class="font-semibold text-lg">JSF</div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400">Scholarship</div>
                     </div>
                 </div>
                 <button id="mobileClose"
@@ -246,14 +249,18 @@
 
                         <div
                             class="w-full flex items-center justify-between px-3 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 group">
-                            <a href="" class="w-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                            <a href=""
+                                class="w-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
                                 <div class="flex items-center gap-3">
-                                    <i class="fas fa-calendar-alt w-5 text-gray-400 group-hover:text-blue-500 transition-colors duration-200"></i>
+                                    <i
+                                        class="fas fa-calendar-alt w-5 text-gray-400 group-hover:text-blue-500 transition-colors duration-200"></i>
                                     <span>Activity</span>
                                 </div>
                             </a>
-                            <button class="mobile-menu-toggle group cursor-pointer size-6 flex justify-center items-center border border-slate-200 dark:border-slate-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
-                                <i class="fas fa-chevron-down text-xs text-gray-400 transition-transform duration-200"></i>
+                            <button
+                                class="mobile-menu-toggle group cursor-pointer size-6 flex justify-center items-center border border-slate-200 dark:border-slate-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
+                                <i
+                                    class="fas fa-chevron-down text-xs text-gray-400 transition-transform duration-200"></i>
                             </button>
                         </div>
 
@@ -322,7 +329,7 @@
     @stack('scripts')
     @stack('script')
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             /* -------------------------------
                AOS
@@ -336,7 +343,7 @@
             /* -------------------------------
                Offcanvas Open / Close (Mobile)
             -------------------------------- */
-            $('#mobileOpen').on('click', function() {
+            $('#mobileOpen').on('click', function () {
                 $('#offcanvasMenu').addClass('open');
                 $('#offcanvasBackdrop').addClass('open');
                 $('body').css('overflow', 'hidden');
@@ -354,7 +361,7 @@
             /* -------------------------------
                Mobile Submenu Toggle
             -------------------------------- */
-            $('.mobile-menu-toggle').on('click', function() {
+            $('.mobile-menu-toggle').on('click', function () {
                 let submenu = $(this).closest('.mobile-menu-section').find('.mobile-submenu');
                 let icon = $(this).find('.fa-chevron-down');
 
@@ -366,10 +373,10 @@
                Desktop Menu Hover Submenu
             -------------------------------- */
             $('.group').hover(
-                function() {
+                function () {
                     $(this).find('.submenu').stop(true, true).fadeIn(150);
                 },
-                function() {
+                function () {
                     $(this).find('.submenu').stop(true, true).fadeOut(120);
                 }
             );
@@ -389,14 +396,14 @@
                 setDarkMode(savedMode === '1');
             }
 
-            $('.darkToggle').on('click', function() {
+            $('.darkToggle').on('click', function () {
                 setDarkMode(!$('html').hasClass('dark'));
             });
 
             /* -------------------------------
                Escape key closes menu
             -------------------------------- */
-            $(document).on('keydown', function(e) {
+            $(document).on('keydown', function (e) {
                 if (e.key === 'Escape') closeOffcanvas();
             });
 
@@ -420,7 +427,7 @@
                 loop: true,
                 autoplay: {
                     delay: 3000,
-                     disableOnInteraction: false,
+                    disableOnInteraction: false,
                 },
                 pagination: {
                     el: '.swiper-pagination',

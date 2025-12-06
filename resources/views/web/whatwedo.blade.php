@@ -2,7 +2,6 @@
 
 @section('content')
     <style>
-
         .card-hover {
             transition: all 0.3s ease;
         }
@@ -363,7 +362,8 @@
                                 <p class="text-blue-100">Hear from our alumni</p>
                             </div>
                         </div>
-                        <p class="text-blue-100 mb-6">"The language program at Wat Damnak gave me the confidence to pursue
+                        <p class="text-blue-100 mb-6">"The language program at JSF Scholarship gave me the confidence to
+                            pursue
                             my dream of studying abroad. Today, I'm a university student in Australia!"</p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-yellow-400 rounded-full mr-4"></div>

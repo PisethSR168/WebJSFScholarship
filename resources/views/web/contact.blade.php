@@ -63,7 +63,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-800 dark:text-white">Address</h4>
-                                <p class="text-gray-600 dark:text-gray-400">123 Education Street, Siem Reap,
+                                <p class="text-gray-600 dark:text-gray-400">JSF Scholarship, Siem Reap,
                                     Cambodia</p>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                             <div>
                                 <h4 class="font-bold text-gray-800 dark:text-white">Phone</h4>
                                 <p class="text-gray-600 dark:text-gray-400">
-                                    <a href="">+855 12 345 678</a>
+                                    <a href="tel:+85512225131">(+855) 12 22 51 31</a>
                                 </p>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                             <div>
                                 <h4 class="font-bold text-gray-800 dark:text-white">Email</h4>
                                 <p class="text-gray-600 dark:text-gray-400">
-                                    <a href="">info@watdamnakschool.edu.kh</a>
+                                    <a href="mailto:neouwannen3@gmail.com">neouwannen3@gmail.com</a>
                                 </p>
                             </div>
                         </div>
