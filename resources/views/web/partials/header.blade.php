@@ -3,10 +3,10 @@
     <div class="max-w-7xl xl:max-w-[96rem] mx-auto px-4 py-3 flex items-center justify-between">
         <div class="flex items-center gap-4">
             <a href="#" class="flex items-center gap-3">
-                <img src="{{ asset('assets/images/joel_logo.png') }}" alt="logo" class="size-14 rounded-full border" />
+                <img src="{{ asset('assets/images/joel_logo.png') }}" alt="logo" class="size-72 rounded-full border" />
                 <div class="hidden sm:block">
-                    <div class="font-semibold text-lg">JSF</div>
-                    <div class="text-xs text-gray-500 dark:text-gray-400">Scholarship</div>
+                    <div class="font-semibold text-9xl">JSF</div>
+                    <div class="text-7xl text-gray-500 dark:text-gray-400">Scholarship</div>
                 </div>
             </a>
         </div>
@@ -16,11 +16,11 @@
             <ul class="flex gap-2 items-center">
                 <li class="group relative">
                     <a href="{{ route('web.home') }}"
-                        class="px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Home</a>
+                        class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Home</a>
                 </li>
                 <li class="group relative">
                     <button
-                        class="px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-2 submenu-toggle no-select transition-colors duration-200">
+                        class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-2 submenu-toggle no-select transition-colors duration-200">
                         Who i am
                         <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180"
                             viewBox="0 0 20 20" fill="currentColor">
@@ -34,12 +34,12 @@
                         class="submenu absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-2 border border-gray-200 dark:border-gray-700">
                         <li>
                             <a href="{{ route('web.about') }}"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Our
+                                class="text-9xl block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Our
                                 History</a>
                         </li>
                         <li>
                             <a href="#team"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Mission
+                                class="text-9xl block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Mission
                                 &
                                 Vision</a>
                         </li>
@@ -47,13 +47,13 @@
                 </li>
                 <li class="group relative">
                     <a href="{{ route('web.home') }}"
-                        class="px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">What
+                        class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">What
                         we do</a>
                 </li>
 
                 <li class="group relative">
                     <button
-                        class="px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-2 submenu-toggle no-select transition-colors duration-200">Activity
+                        class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-2 submenu-toggle no-select transition-colors duration-200">Activity
                         <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180"
                             viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
@@ -64,26 +64,26 @@
                     <ul
                         class="submenu absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-2 border border-gray-200 dark:border-gray-700">
                         <li><a href="#events"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Events</a>
+                                class="text-9xl block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Events</a>
                         </li>
 
                         <li>
                             <a href="#clubs"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">News</a>
+                                class="text-9xl block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">News</a>
                         </li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="{{ route('web.contact') }}"
-                        class="px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Contact
+                        class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">Contact
                         Us</a>
                 </li>
             </ul>
         </nav>
         <div class="relative">
             <a href="{{ route('web.home') }}"
-                class="px-3 py-2 border border-orange-500 rounded-md bg-orange-500 hover:bg-transparent dark:hover:bg-gray-7 hover:text-orange-500 text-slate-100 transition-colors duration-200 cursor-pointer">
+                class="text-9xl px-3 py-2 border border-orange-500 rounded-md bg-orange-500 hover:bg-transparent dark:hover:bg-gray-7 hover:text-orange-500 text-slate-100 transition-colors duration-200 cursor-pointer">
                 <i class="fas fa-hand-holding-heart w-5 group-hover:text-blue-500 transition-colors duration-200"></i>
                 Donations
             </a>

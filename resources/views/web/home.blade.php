@@ -7,8 +7,7 @@
             <div class="swiper-wrapper">
                 <!-- slide 1: image -->
                 <div class="swiper-slide relative">
-                    <img src="https://scontent.fpnh18-6.fna.fbcdn.net/v/t39.30808-6/486381789_9708334435872500_6548513194613941562_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEplBOaboVq3oui0YMpwP1G38yoHCHsuhzfzKgcIey6HBphRyHVZl18yHJLPoxoIjZ6h487ZyxEHno04N5SvIv4&_nc_ohc=021nviBI3eoQ7kNvwHrRQHx&_nc_oc=AdlqGmyNajzs4GJZJfozUDnJTI8vEORlZ9WkSmggj7vfFYY4y5nTvrCbz5kFGKhmt50&_nc_zt=23&_nc_ht=scontent.fpnh18-6.fna&_nc_gid=oTuL6sqv3gKByszCZhOlMA&oh=00_AfiErdyA1izR2lujCyZb3bmdko_qjLqFHVaDMnNrY8lvQw&oe=691D68F0"
-                        alt="slide" class="w-full h-full object-cover" />
+                    <img src="{{ asset('img/University.png') }}" alt="slide" class="w-full h-full object-cover" />
                     <div class="absolute inset-0 bg-black/30 flex items-center">
                         <div class="max-w-4xl mx-auto px-6 text-white" data-aos="fade-up">
                             <h1 class="text-3xl md:text-5xl font-bold">JSF Scholarship</h1>
@@ -183,9 +182,8 @@
     <!-- Our Staff Section -->
     <section id="staff" class="py-16 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Dedicated Staff
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Management Team
             </h2>
-
             <div class="swiper staffSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -234,12 +232,13 @@
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1551836026-d5c88ac5d691?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                                alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Vichea</h4>
-                            <p class="text-blue-600 dark:text-blue-400 mb-2">Art Teacher</p>
-                            <p class="text-gray-600 dark:text-gray-400">Inspiring creativity and artistic
-                                expression in our students.</p>
+                            <img src="{{ asset('img/piseth.jpg') }}" alt="Teacher"
+                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. PISETH SONG </h4>
+                            <p class="text-blue-600 dark:text-blue-400 mb-2">Cyber & Development</p>
+                            <p class="text-gray-600 dark:text-gray-400">Passionate about helping students build strong
+                                foundations in cybersecurity and development while nurturing creativity and problem-solving
+                                skills.</p>
                         </div>
                     </div>
                 </div>

@@ -74,7 +74,7 @@ R::get('/', function () {
   if (Auth::check())
     return redirect('/admin/profile');
 
-  return redirect('/login');
+  return redirect('/home');
 });
 /*
 |--------------------------------------------------------------------------
