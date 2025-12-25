@@ -21,7 +21,7 @@
                 <li class="group relative">
                     <button
                         class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center gap-2 submenu-toggle no-select transition-colors duration-200">
-                        Who i am
+                        Who am I?
                         <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180"
                             viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd"
@@ -48,7 +48,7 @@
                 <li class="group relative">
                     <a href="{{ route('web.home') }}"
                         class="text-9xl px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">What
-                        we do</a>
+                        We do</a>
                 </li>
 
                 <li class="group relative">

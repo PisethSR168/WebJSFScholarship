@@ -296,7 +296,7 @@
                             </div>
                         </div>
 
-                        <div class="timeline-item" data-aos="fade-right">
+                        <!-- <div class="timeline-item" data-aos="fade-right">
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
                                 <div class="flex items-center mb-3">
                                     <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -307,9 +307,9 @@
                                     for excellence
                                     in community-based education.</p>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="timeline-item" data-aos="fade-left">
+                        <!-- <div class="timeline-item" data-aos="fade-left">
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
                                 <div class="flex items-center mb-3">
                                     <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -320,9 +320,9 @@
                                     expanded STEM
                                     programs to prepare students for the future.</p>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="timeline-item" data-aos="fade-right">
+                        <!-- <div class="timeline-item" data-aos="fade-right">
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
                                 <div class="flex items-center mb-3">
                                     <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -333,7 +333,7 @@
                                     teachers and
                                     comprehensive educational programs.</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

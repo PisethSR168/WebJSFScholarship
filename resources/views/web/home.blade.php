@@ -23,7 +23,7 @@
                 <!-- slide 2: video -->
                 <div class="swiper-slide relative">
                     <video class="hero-video" autoplay muted loop playsinline>
-                        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        <source src="{{ asset('video/hero-video.mp4') }}"
                             type="video/mp4">
                     </video>
                     <div
@@ -188,27 +188,26 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            <img src="{{ asset('img/mrjoel.jpg') }}"
                                 alt="Principal" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Somchai</h4>
+                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Joel</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Principal</p>
                             <p class="text-gray-600 dark:text-gray-400">With over 20 years of experience in
-                                education, Mr. Somchai leads our school with vision and dedication.</p>
+                                education, Mr. Joel leads our school with vision and dedication.</p>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80"
+                            <img src="{{ asset('img/mrnen.jpg') }}" alt="Teacher"
                                 alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Ms. Naree</h4>
+                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Neou Nen</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Head of English Department</p>
-                            <p class="text-gray-600 dark:text-gray-400">Passionate about language education and
-                                student development.</p>
+                            <p class="text-gray-600 dark:text-gray-400">Passionate about inspiring smiles, teaching English, leadership development, and creating positive change through education and digital content..</p>
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
                             <img src="https://images.unsplash.com/photo-1544717390-1c8b4c5caf7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
                                 alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
@@ -217,9 +216,9 @@
                             <p class="text-gray-600 dark:text-gray-400">Dedicated to making science accessible and
                                 exciting for all students.</p>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
                             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
                                 alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
@@ -228,13 +227,13 @@
                             <p class="text-gray-600 dark:text-gray-400">Making complex mathematical concepts simple
                                 and understandable.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
                             <img src="{{ asset('img/piseth.jpg') }}" alt="Teacher"
                                 class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. PISETH SONG </h4>
+                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr.Song Piseth </h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Cyber & Development</p>
                             <p class="text-gray-600 dark:text-gray-400">Passionate about helping students build strong
                                 foundations in cybersecurity and development while nurturing creativity and problem-solving
@@ -257,30 +256,26 @@
             <div class="swiper studentSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                                alt="Student" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Sokha</h4>
-                            <p class="text-blue-600 dark:text-blue-400 mb-2">Grade 10 - Science</p>
-                            <p class="text-gray-600 dark:text-gray-400">Top scorer in National Science Olympiad
-                                2023</p>
-                        </div>
+<div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
+    <img src="{{ asset('img/Chhorn Ponchai.jpg') }}" alt="Portrait of Chhorn Ponchai" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+    <h4 class="text-xl font-bold text-gray-800 dark:text-white">Chhorn Ponchai</h4>
+    <p class="text-blue-600 dark:text-blue-400 mb-2">Architecture</p>
+    <p class="text-gray-600 dark:text-gray-400">I'm 18 years old and currently studying Architecture at Build Bright University. My key skills include technical design and effective communication.</p>
+</div>
+                    </div>
+
+                    <div class="swiper-slide">
+<div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
+    <img src="{{ asset('img/sophanit.jpg') }}" alt="Portrait of Nery Sophanit" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+    <h4 class="text-xl font-bold text-gray-800 dark:text-white">Nery Sophanit</h4>
+    <p class="text-blue-600 dark:text-blue-400 mb-2">Civil Engineering & Construction</p>
+    <p class="text-gray-600 dark:text-gray-400">I'm 20 years old and currently studying Civil Engineering and Construction at Build Bright University. My key skills include structural planning and project management.</p>
+</div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                                alt="Student" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h4 class="text-xl font-bold text-gray-800 dark:text-white">Sreyneath</h4>
-                            <p class="text-blue-600 dark:text-blue-400 mb-2">Grade 11 - Arts</p>
-                            <p class="text-gray-600 dark:text-gray-400">Winner of National Essay Competition 2023
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            <img src="{{ asset('img/rith.jpg') }}"
                                 alt="Student" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Rith</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Grade 9 - Mathematics</p>
@@ -291,7 +286,7 @@
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+                            <img src="{{ asset('img/mrjoel.jpg') }}"
                                 alt="Student" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Sophea</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Grade 12 - Literature</p>
@@ -302,7 +297,7 @@
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            <img src="{{ asset('img/mrjoel.jpg') }}"
                                 alt="Student" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Chan</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Grade 8 - Technology</p>
@@ -327,7 +322,7 @@
                     <h3 id="history" class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Our History
                     </h3>
                     <p class="text-gray-700 dark:text-gray-300 mb-6">
-                        Founded in 2005, JSF Scholarship has been at the forefront of providing quality
+                        Founded in 2025, JSF Scholarship has been at the forefront of providing quality
                         education
                         to students in our community. Our journey began with a small group of dedicated educators
                         and has
