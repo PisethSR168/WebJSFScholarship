@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\StoreGradeLevelRequest;
 use App\Http\Requests\UpdateGradeLevelRequest;
