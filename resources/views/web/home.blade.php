@@ -37,8 +37,7 @@
 
                 <!-- slide 3: image -->
                 <div class="swiper-slide relative">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80&auto=format&fit=crop"
-                        alt="slide" class="w-full h-full object-cover" />
+                    <img src="{{ asset('img/backgroudweb.jpg') }}" alt="slide" class="w-full h-full object-cover" />
                     <div class="absolute inset-0 bg-black/25 flex items-center">
                         <div class="max-w-4xl mx-auto px-6 text-white" data-aos="fade-up">
                             <h2 class="text-4xl md:text-6xl font-bold mb-4">Community & Culture</h2>
@@ -54,7 +53,7 @@
     </section>
 
     <!-- News Section with Cool Cards -->
-    <section id="news" class="py-16 bg-gray-50 dark:bg-gray-900">
+    <!-- <section id="news" class="py-16 bg-gray-50 dark:bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-aos="fade-up">Latest News</h2>
             <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up"
@@ -62,9 +61,9 @@
                 Stay updated with the latest happenings and achievements at JSF Scholarship
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
                 <!-- News Card 1 -->
-                <div class="news-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
+                <!-- <div class="news-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
                     data-aos-delay="100">
                     <div class="relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
@@ -82,10 +81,10 @@
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- News Card 2 -->
-                <div class="news-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
+                <!-- <div class="news-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
                     data-aos-delay="200">
                     <div class="relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -103,10 +102,10 @@
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- News Card 3 -->
-                <div class="news-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
+                <!-- <div class="news-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
                     data-aos-delay="300">
                     <div class="relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -125,17 +124,17 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- View All News Button -->
-            <div class="text-center mt-12" data-aos="fade-up">
+            <!-- <div class="text-center mt-12" data-aos="fade-up">
                 <a href="#"
                     class="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition duration-300 font-medium">
                     View All News <i class="fas fa-newspaper ml-2"></i>
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Activities & Events Section -->
     <section id="events" class="py-16 bg-white dark:bg-gray-800">

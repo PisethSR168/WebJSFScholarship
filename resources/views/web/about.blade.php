@@ -10,6 +10,14 @@
             background: linear-gradient(135deg, #020617 0%, #1e3a8a 100%);
         }
 
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 25%, #60a5fa 50%, #d8bc1dff 75%, #d1d1cdff 100%);
+        }
+
+        .dark .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
+        }
+
         .card-hover {
             transition: all 0.3s ease;
         }
@@ -21,18 +29,6 @@
 
         .dark .card-hover:hover {
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .mission-card {
-            border-top: 4px solid #3b82f6;
-        }
-
-        .vision-card {
-            border-top: 4px solid #10b981;
-        }
-
-        .values-card {
-            border-top: 4px solid #8b5cf6;
         }
 
         .floating {
@@ -101,16 +97,190 @@
             display: none;
         }
 
-        .team-card {
+        .timeline-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .timeline-content.open {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .arrow.rotate {
+            transform: rotate(180deg);
+        }
+
+        .value-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
+        }
+
+        .value-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0));
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .value-card:hover::after {
+            opacity: 1;
+        }
+
+        .value-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+        }
+
+        .icon-container {
+            position: relative;
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+
+        .value-card:hover .icon-container {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .value-card-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+        }
+
+        .value-card-purple {
+            background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+        }
+
+        .value-card-pink {
+            background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);
+        }
+
+        .arrow-btn {
             transition: all 0.3s ease;
         }
 
-        .team-card:hover .team-image {
-            transform: scale(1.05);
+        .value-card:hover .arrow-btn {
+            transform: translateX(8px);
         }
 
-        .team-image {
-            transition: transform 0.3s ease;
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.3s; opacity: 0; }
+        .delay-3 { animation-delay: 0.5s; opacity: 0; }
+
+        .gradient-border {
+            background: linear-gradient(90deg, transparent, #3b82f6, #a855f7, transparent);
+            height: 3px;
+            border-radius: 2px;
+        }
+
+        .objective-card {
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .objective-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .objective-card:hover::before {
+            opacity: 1;
+        }
+        
+        .objective-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        .dark .objective-card:hover {
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+        
+        .icon-wrapper {
+            transition: all 0.4s ease;
+        }
+        
+        .objective-card:hover .icon-wrapper {
+            transform: scale(1.15) rotate(10deg);
+        }
+        
+        .number-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        .dark .number-badge {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .objectives-gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .divider-line {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
+            margin: 2rem 0;
         }
     </style>
 
@@ -118,107 +288,24 @@
     <section class="hero-gradient text-white py-20">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Who I Am</h1>
-                <p class="text-xl text-blue-100 mb-8">Discover our story, our mission, and the passionate team behind
-                    JSF Scholarship - dedicated to transforming lives through education since 2005.</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Joel Scholarship Foundation</h1>
+                <p class="text-xl text-blue-50 mb-8">Dedicated to empowering underprivileged youth from rural areas of Cambodia by providing financial support for their higher education at universities in Siem Reap.</p>
+                <div class="mb-8">
+                    <p class="text-lg text-blue-100 italic">"Supporting Dreams, Shaping Leaders"</p>
+                </div>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="#history"
                         class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
-                        Our History
+                        History
                     </a>
-                    <a href="#mission"
-                        class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition duration-300 dark:border-gray-300 dark:hover:bg-gray-800 dark:hover:text-white">
-                        Mission & Vision
+                    <a href="#values"
+                        class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
+                        Core Values
                     </a>
-                    <a href="#team"
-                        class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition duration-300 dark:border-gray-300 dark:hover:bg-gray-800 dark:hover:text-white">
-                        Meet Our Team
+                    <a href="#objectives"
+                        class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
+                        Objectives
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="py-16 bg-white dark:bg-gray-900">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2" data-aos="fade-right">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6">Our Identity & Purpose
-                    </h2>
-                    <p class="text-gray-600 dark:text-gray-300 mb-6 text-lg">JSF Scholarship is more than
-                        just an educational
-                        institution - we are a community dedicated to nurturing young minds and empowering future
-                        leaders.</p>
-                    <p class="text-gray-600 dark:text-gray-300 mb-8">Founded in 2005, we have grown from a small community
-                        initiative to a
-                        respected learning center that has impacted thousands of students in Siem Reap and beyond.</p>
-
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="text-center">
-                            <div
-                                class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <i class="fas fa-heart text-blue-600 dark:text-blue-300 text-2xl"></i>
-                            </div>
-                            <h3 class="font-semibold text-gray-800 dark:text-white">Passionate</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">About education</p>
-                        </div>
-                        <div class="text-center">
-                            <div
-                                class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <i class="fas fa-hand-holding-heart text-green-600 dark:text-green-300 text-2xl"></i>
-                            </div>
-                            <h3 class="font-semibold text-gray-800 dark:text-white">Committed</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">To our community</p>
-                        </div>
-                        <div class="text-center">
-                            <div
-                                class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <i class="fas fa-lightbulb text-purple-600 dark:text-purple-300 text-2xl"></i>
-                            </div>
-                            <h3 class="font-semibold text-gray-800 dark:text-white">Innovative</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">In our approach</p>
-                        </div>
-                        <div class="text-center">
-                            <div
-                                class="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <i class="fas fa-users text-yellow-600 dark:text-yellow-300 text-2xl"></i>
-                            </div>
-                            <h3 class="font-semibold text-gray-800 dark:text-white">Inclusive</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">For all students</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/2" data-aos="fade-left">
-                    <div
-                        class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white relative overflow-hidden">
-                        <div class="relative z-10">
-                            <h3 class="text-2xl font-bold mb-4">Our Philosophy</h3>
-                            <p class="text-blue-100 mb-6">We believe that every child deserves access to quality
-                                education that not only builds academic skills but also develops character, creativity,
-                                and critical thinking.</p>
-                            <div class="space-y-4">
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-yellow-300 mr-3"></i>
-                                    <span>Holistic development approach</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-yellow-300 mr-3"></i>
-                                    <span>Student-centered learning</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-yellow-300 mr-3"></i>
-                                    <span>Cultural preservation</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-check-circle text-yellow-300 mr-3"></i>
-                                    <span>Community engagement</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full floating"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -229,57 +316,177 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Our History</h2>
-                <p class="text-xl text-blue-100 max-w-3xl mx-auto">From humble beginnings to a beacon of education in
-                    Siem Reap - our journey through the years.</p>
             </div>
 
             <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols gap-8">
                     <div data-aos="fade-right">
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 h-full">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 h-full relative overflow-hidden">
+                            <div class="absolute top-4 right-4 text-green-300 opacity-20">
+                                <i class="fas fa-quote-left text-4xl"></i>
+                            </div>
                             <h3 class="text-2xl font-bold mb-6 flex items-center">
                                 <i class="fas fa-seedling mr-3 text-green-300"></i>
-                                Our Beginnings
+                                Joel Scholarship Foundation
                             </h3>
-                            <p class="text-blue-100 mb-6">JSF Scholarship started in 2005 as a small
-                                initiative within the temple grounds, offering basic English classes to local children
-                                who had limited access to education.</p>
-                            <p class="text-blue-100">With just 2 teachers and 35 students, we began our mission to
-                                provide quality education to the community, focusing on language skills and cultural
-                                preservation.</p>
+                            <p class="text-blue-100 mb-6 text-lg leading-relaxed text-justify">The Joel Scholarship Foundation is dedicated to empowering underprivileged youth from rural areas of Cambodia by providing financial support for their higher education at universities in Siem Reap. Our mission is to remove financial barriers that prevent talented young individuals from pursuing their academic goals and to foster a culture of community responsibility among our scholarship recipients.</p>
+                            <div class="absolute bottom-4 right-4 text-green-300 opacity-20">
+                                <i class="fas fa-quote-right text-2xl"></i>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div data-aos="fade-left">
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 h-full">
-                            <h3 class="text-2xl font-bold mb-6 flex items-center">
-                                <i class="fas fa-chart-line mr-3 text-yellow-300"></i>
-                                Growth & Expansion
-                            </h3>
-                            <p class="text-blue-100 mb-6">By 2010, we had expanded our programs to include computer
-                                literacy, arts, and vocational training, responding to the growing needs of our
-                                community.</p>
-                            <p class="text-blue-100">We moved to a larger facility and increased our teaching staff to
-                                accommodate over 200 students, becoming a recognized educational institution in Siem
-                                Reap.</p>
+    <!-- Core Values Section -->
+    <section id="values" class="py-24 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <!-- Header -->
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="inline-block text-sm font-bold text-blue-600 dark:text-blue-400 mb-4 uppercase tracking-widest">
+                    Our Foundation
+                </span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6">
+                    <span class="text-gray-900 dark:text-white">Core </span>
+                    <span class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl shadow-lg">Values</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+                    The principles that define who we are and guide everything we do
+                </p>
+                <div class="gradient-border max-w-md mx-auto"></div>
+            </div>
+
+            <!-- Values Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- Generosity Card -->
+                <div class="value-card value-card-blue text-white shadow-2xl animate-fadeIn delay-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-10">
+                        <!-- Icon -->
+                        <div class="icon-container mb-8">
+                            <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto">
+                                <i class="fas fa-heart text-5xl text-white"></i>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-3xl font-bold mb-6 text-center">Generosity</h3>
+
+                        <!-- Divider -->
+                        <div class="w-20 h-1 bg-white/40 mx-auto mb-6 rounded-full"></div>
+
+                        <!-- Description -->
+                        <p class="text-lg leading-relaxed text-blue-50 text-center mb-8">
+                            We emphasize the value of giving, we encourage our scholars to share their knowledge and resources with others in need.
+                        </p>
+
+                        <!-- Arrow Button -->
+                        <div class="text-center">
+                            <button class="arrow-btn inline-flex items-center justify-center w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full transition-all">
+                                <i class="fas fa-arrow-right text-white text-lg"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Timeline -->
+                <!-- Perseverance Card -->
+                <div class="value-card value-card-purple text-white shadow-2xl animate-fadeIn delay-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-10">
+                        <!-- Icon -->
+                        <div class="icon-container mb-8">
+                            <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto">
+                                <i class="fas fa-mountain text-5xl text-white"></i>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-3xl font-bold mb-6 text-center">Perseverance</h3>
+
+                        <!-- Divider -->
+                        <div class="w-20 h-1 bg-white/40 mx-auto mb-6 rounded-full"></div>
+
+                        <!-- Description -->
+                        <p class="text-lg leading-relaxed text-purple-50 text-center mb-8">
+                            We celebrate the spirit of resilience, inspiring students to overcome challenges and pursue their educational goals with determination.
+                        </p>
+
+                        <!-- Arrow Button -->
+                        <div class="text-center">
+                            <button class="arrow-btn inline-flex items-center justify-center w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full transition-all">
+                                <i class="fas fa-arrow-right text-white text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unity Card -->
+                <div class="value-card value-card-pink text-white shadow-2xl animate-fadeIn delay-3" data-aos="fade-up" data-aos-delay="600">
+                    <div class="p-10">
+                        <!-- Icon -->
+                        <div class="icon-container mb-8">
+                            <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto">
+                                <i class="fas fa-users text-5xl text-white"></i>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-3xl font-bold mb-6 text-center">Unity</h3>
+
+                        <!-- Divider -->
+                        <div class="w-20 h-1 bg-white/40 mx-auto mb-6 rounded-full"></div>
+
+                        <!-- Description -->
+                        <p class="text-lg leading-relaxed text-pink-50 text-center mb-8">
+                            We foster collaboration and community spirit, recognizing that working together strengthens our impact and creates lasting change.
+                        </p>
+
+                        <!-- Arrow Button -->
+                        <div class="text-center">
+                            <button class="arrow-btn inline-flex items-center justify-center w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full transition-all">
+                                <i class="fas fa-arrow-right text-white text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-16 history-gradient text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Journey Timeline</h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
                 <div class="mt-16" data-aos="fade-up">
-                    <h3 class="text-2xl font-bold text-center mb-8">Our Journey Timeline</h3>
                     <div class="space-y-8">
                         <div class="timeline-item" data-aos="fade-right">
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
                                 <div class="flex items-center mb-3">
                                     <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        2005</div>
+                                        2025</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Foundation</h4>
-                                <p class="text-gray-600 dark:text-gray-300">JSF Scholarship established with
-                                    35 students and 2
-                                    teachers, offering basic English classes.</p>
+                                <p class="text-gray-600 dark:text-gray-300">Joel Scholarship Foundation established with
+                                    focus on rural education access and higher education opportunities.</p>
+                                
+                                <!-- Dropdown Content -->
+                                <div id="content-2025" class="timeline-content mt-3">
+                                    <p class="text-gray-600 dark:text-gray-200">
+                                        Our foundation began with a vision to bridge the educational gap between urban and rural communities. We started by conducting comprehensive research on the barriers faced by talented students in remote areas and developed a sustainable model for support.
+                                    </p>
+                                </div>
+                                
+                                <!-- See More Button -->
+                                <button onclick="toggleContent('2025')" class="flex items-center mt-3 text-blue-600 dark:text-blue-400 hover:underline focus:outline-none">
+                                    <span id="text-2025">See more...</span>
+                                    <svg id="arrow-2025" class="arrow w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
 
@@ -287,266 +494,153 @@
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
                                 <div class="flex items-center mb-3">
                                     <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        2010</div>
+                                        2026</div>
                                 </div>
                                 <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Expansion</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Moved to larger facility and expanded programs
-                                    to include
-                                    computer literacy and vocational training.</p>
-                            </div>
-                        </div>
-
-                        <!-- <div class="timeline-item" data-aos="fade-right">
-                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-                                <div class="flex items-center mb-3">
-                                    <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        2015</div>
+                                <p class="text-gray-600 dark:text-gray-300">Launched scholarship program and established
+                                    university partnerships, expanding reach to rural communities across Cambodia.</p>
+                                
+                                <!-- Dropdown Content -->
+                                <div id="content-2026" class="timeline-content mt-3">
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        Our initial cohort of scholars began their studies at partner universities in Siem Reap, receiving full financial support including tuition, accommodation, and living expenses. This marked the beginning of our comprehensive support system designed to ensure academic success and personal development.
+                                    </p>
                                 </div>
-                                <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Recognition</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Received recognition from Ministry of Education
-                                    for excellence
-                                    in community-based education.</p>
+                                
+                                <!-- See More Button -->
+                                <button onclick="toggleContent('2026')" class="flex items-center mt-3 text-blue-600 dark:text-blue-400 hover:underline focus:outline-none">
+                                    <span id="text-2026">See more...</span>
+                                    <svg id="arrow-2026" class="arrow w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
                             </div>
-                        </div> -->
-
-                        <!-- <div class="timeline-item" data-aos="fade-left">
-                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-                                <div class="flex items-center mb-3">
-                                    <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        2020</div>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Digital Transformation</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Implemented digital learning platforms and
-                                    expanded STEM
-                                    programs to prepare students for the future.</p>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="timeline-item" data-aos="fade-right">
-                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-                                <div class="flex items-center mb-3">
-                                    <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        2023</div>
-                                </div>
-                                <h4 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Today</h4>
-                                <p class="text-gray-600 dark:text-gray-300">Serving 500+ students with 25+ qualified
-                                    teachers and
-                                    comprehensive educational programs.</p>
-                            </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Vision Section -->
-    <section id="mission" class="py-16 bg-white dark:bg-gray-900">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Mission & Vision</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Guiding principles that shape our
-                    educational
-                    approach and future aspirations.</p>
+    <!-- Objectives Section -->
+    <section id="objectives" class="py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center mb-6">
+                    <div class="h-1 w-12 bg-gradient-to-r from-blue-600 to-purple-600 mr-3"></div>
+                    <span class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+                        What We Do
+                    </span>
+                    <div class="h-1 w-12 bg-gradient-to-r from-purple-600 to-pink-600 ml-3"></div>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+                    <span class="objectives-gradient-text">Our Objectives</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Three core pillars that drive our mission to transform lives through education
+                </p>
+                <div class="divider-line"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="mission-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-bullseye text-blue-600 dark:text-blue-300 text-2xl"></i>
+            <!-- Objectives Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Objective 1: Financial Support -->
+                <div class="objective-card bg-white dark:bg-gray-800 rounded-3xl shadow-2xl dark:shadow-xl p-8 relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="number-badge pulse-animation">1</div>
+                    
+                    <div class="icon-wrapper w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-xl dark:shadow-lg">
+                        <i class="fas fa-hand-holding-usd text-white text-4xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Our Mission</h3>
-                    <p class="text-gray-600 dark:text-gray-300">To provide quality, accessible education that empowers
-                        students with
-                        knowledge, skills, and values to become responsible global citizens and leaders in their
-                        communities.</p>
-                </div>
-
-                <div class="vision-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover" data-aos="fade-up"
-                    data-aos-delay="200">
-                    <div
-                        class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-eye text-green-600 dark:text-green-300 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Our Vision</h3>
-                    <p class="text-gray-600 dark:text-gray-300">To be a leading educational institution in Cambodia that
-                        transforms lives
-                        through innovative learning, cultural preservation, and community development.</p>
-                </div>
-
-                <div class="values-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover" data-aos="fade-up"
-                    data-aos-delay="300">
-                    <div
-                        class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-heart text-purple-600 dark:text-purple-300 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Our Values</h3>
-                    <ul class="space-y-3 text-gray-600 dark:text-gray-300">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-                            Integrity and honesty
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-                            Respect for diversity
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-                            Excellence in education
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
-                            Community responsibility
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="py-16 bg-gray-50 dark:bg-gray-800">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">Meet Our Team</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Passionate educators and staff
-                    dedicated to making a
-                    difference in students' lives.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Team Member 1 -->
-                <div class="team-card bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-black/20"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold">Sokha Chen</h3>
-                            <p class="text-blue-100">Director</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Leading our centre with vision and dedication for
-                            over 10 years,
-                            Sokha is passionate about educational accessibility.</p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fas fa-envelope"></i>
-                            </a>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">
+                        Provide Financial Support
+                    </h3>
+                    
+                    <div class="h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-6 rounded-full"></div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                        Offer scholarships to cover tuition and educational expenses for students from rural areas and disadvantaged families.
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center justify-center text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">Full Scholarship Coverage</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Team Member 2 -->
-                <div class="team-card bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="200">
-                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-600 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-black/20"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold">Maly Seng</h3>
-                            <p class="text-green-100">Head of Academics</p>
-                        </div>
+                <!-- Objective 2: Encourage Higher Education -->
+                <div class="objective-card bg-white dark:bg-gray-800 rounded-3xl shadow-2xl dark:shadow-xl p-8 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="number-badge pulse-animation" style="animation-delay: 0.2s;">2</div>
+                    
+                    <div class="icon-wrapper w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-xl dark:shadow-lg">
+                        <i class="fas fa-graduation-cap text-white text-4xl"></i>
                     </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">With 15 years of teaching experience, Maly develops
-                            our
-                            curriculum and ensures educational excellence.</p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="team-card bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="300">
-                    <div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-black/20"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold">Rithy Phan</h3>
-                            <p class="text-purple-100">STEM Coordinator</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">An engineer turned educator, Rithy brings
-                            innovation and hands-on
-                            learning to our science and technology programs.</p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fas fa-envelope"></i>
-                            </a>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">
+                        Encourage Higher Education
+                    </h3>
+                    
+                    <div class="h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                        Promote the significance of higher education in improving lives and communities.
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center justify-center text-purple-600 dark:text-purple-400">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">Transforming Communities</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Team Member 4 -->
-                <div class="team-card bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="400">
-                    <div class="h-64 bg-gradient-to-br from-yellow-400 to-yellow-600 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-black/20"></div>
-                        <div class="absolute bottom-4 left-4 text-white">
-                            <h3 class="text-xl font-bold">Sopheap Lim</h3>
-                            <p class="text-yellow-100">Language Program Head</p>
-                        </div>
+                <!-- Objective 3: Community Responsibility -->
+                <div class="objective-card bg-white dark:bg-gray-800 rounded-3xl shadow-2xl dark:shadow-xl p-8 relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="number-badge pulse-animation" style="animation-delay: 0.4s;">3</div>
+                    
+                    <div class="icon-wrapper w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl dark:shadow-lg">
+                        <i class="fas fa-hands-helping text-white text-4xl"></i>
                     </div>
-                    <div class="p-6">
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Fluent in 4 languages, Sopheap leads our language
-                            department with
-                            cultural sensitivity and pedagogical expertise.</p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fas fa-envelope"></i>
-                            </a>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">
+                        Foster Community Responsibility
+                    </h3>
+                    
+                    <div class="h-1 w-16 bg-gradient-to-r from-pink-500 to-pink-600 mx-auto mb-6 rounded-full"></div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+                        Inspire scholarship recipients to engage in community service, help others and make a difference in their communities.
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center justify-center text-pink-600 dark:text-pink-400">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">Giving Back Together</span>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="text-center mt-12" data-aos="fade-up">
-                <a href="#"
-                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 inline-flex items-center dark:bg-blue-700 dark:hover:bg-blue-600">
-                    View All Team Members
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
-        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Become Part of Our Story</h2>
-            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">Join our community of learners, educators, and
-                changemakers dedicated to transforming education in Cambodia.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#"
-                    class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
-                    Enroll Today
-                </a>
-                <a href="#"
-                    class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition duration-300 dark:border-gray-300 dark:hover:bg-gray-800 dark:hover:text-white">
-                    Volunteer With Us
-                </a>
-                <a href="#"
-                    class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition duration-300 dark:border-gray-300 dark:hover:bg-gray-800 dark:hover:text-white">
-                    Support Our Mission
-                </a>
-            </div>
-        </div>
-    </section>
+    <script>
+        function toggleContent(year) {
+            const content = document.getElementById(`content-${year}`);
+            const text = document.getElementById(`text-${year}`);
+            const arrow = document.getElementById(`arrow-${year}`);
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                text.textContent = 'See more...';
+                arrow.classList.remove('rotate');
+            } else {
+                content.classList.add('open');
+                text.textContent = 'See less';
+                arrow.classList.add('rotate');
+            }
+        }
+    </script>
 @endsection
