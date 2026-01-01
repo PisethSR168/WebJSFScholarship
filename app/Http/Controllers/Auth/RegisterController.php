@@ -20,6 +20,11 @@ class RegisterController extends Controller
     $this->middleware('guest');
   }
 
+  public function showRegistrationForm()
+  {
+    return view('web.auth.portal');
+  }
+
   protected function validator(array $data)
   {
     return Validator::make($data, [

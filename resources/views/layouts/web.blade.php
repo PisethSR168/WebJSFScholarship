@@ -91,6 +91,33 @@
         .hero-gradient {
             background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
         }
+
+        .header-btn {
+            padding: 10px 25px;
+            border: 2px solid #667eea;
+            background: transparent;
+            color: #667eea;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .header-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .header-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+        }
     </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -164,6 +191,10 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="flex items-center gap-2">
+                    <a href="{{ route('login') }}" class="header-btn">Login</a>
+                    <a href="{{ route('register') }}" class="header-btn">Register</a>
+                </div>
                 <div class="relative">
                     <a href="{{ route('web.donation') }}"
                         class="px-3 py-2 border border-orange-500 rounded-md bg-orange-500 hover:bg-transparent dark:hover:bg-gray-7 hover:text-orange-500 text-slate-100 transition-colors duration-200 cursor-pointer">
@@ -282,6 +313,11 @@
                             class="fas fa-envelope w-5 text-gray-400 group-hover:text-blue-500 transition-colors duration-200"></i>
                         <span>Contact Us</span>
                     </a>
+
+                    <div class="flex gap-2 px-3 py-3">
+                        <a href="{{ route('login') }}" class="header-btn">Login</a>
+                        <a href="{{ route('register') }}" class="header-btn">Register</a>
+                    </div>
 
                 </nav>
 

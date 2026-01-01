@@ -137,7 +137,7 @@
     </section> -->
 
     <!-- Activities & Events Section -->
-    <section id="events" class="py-16 bg-white dark:bg-gray-800">
+    <!-- <section id="events" class="py-16 bg-white dark:bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Activities & Events</h2>
 
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Our Staff Section -->
     <section id="staff" class="py-16 bg-gray-100 dark:bg-gray-900">
