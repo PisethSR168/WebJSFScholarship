@@ -11,7 +11,7 @@
         }
 
         .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 25%, #60a5fa 50%, #d8bc1dff 75%, #d1d1cdff 100%);
+            background: linear-gradient(135deg, hsla(51, 60%, 76%, 1.00) 75%, hsla(51, 60%, 76%, 1.00) 75%, #f7ca51ff 50%, hsla(51, 60%, 76%, 1.00) 75%, #d1d1cdff 100%);
         }
 
         .dark .hero-gradient {
@@ -289,9 +289,9 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Joel Scholarship Foundation</h1>
-                <p class="text-xl text-blue-50 mb-8">Dedicated to empowering underprivileged youth from rural areas of Cambodia by providing financial support for their higher education at universities in Siem Reap.</p>
+                <p class="text-xl gradient-text mb-8">Dedicated to empowering underprivileged youth from rural areas of Cambodia by providing financial support for their higher education at universities in Siem Reap.</p>
                 <div class="mb-8">
-                    <p class="text-lg text-blue-100 italic">"Supporting Dreams, Shaping Leaders"</p>
+                    <p class="text-lg gradient-text italic">"Supporting Dreams, Shaping Leaders"</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="#history"

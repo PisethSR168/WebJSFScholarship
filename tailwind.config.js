@@ -20,6 +20,9 @@ module.exports = {
         base: ['14px', { lineHeight: '20px' }],
       },
       colors: {
+        blue: {
+          50: 'rgb(26, 104, 206)',
+        },
 
         primary: {
           50: '#f0f9ff',
