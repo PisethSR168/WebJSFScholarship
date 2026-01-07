@@ -62,6 +62,13 @@ R::get('/', function () {
   return redirect('/home');   // 👈 redirect main domain to website home
 });
 
+R::get('/events', function () {
+  return view('web.events');
+})->name('web.events');
+
+R::get('/news', function () {
+  return view('web.news');
+})->name('web.news');
 /*
 |--------------------------------------------------------------------------
 | AUTH ROUTES

@@ -19,7 +19,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- slide 2: video -->
                 <div class="swiper-slide relative">
                     <video class="hero-video" autoplay muted loop playsinline>
@@ -190,9 +189,8 @@
                             <img src="{{ asset('img/mrjoel.jpg') }}"
                                 alt="Principal" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Joel</h4>
-                            <p class="text-blue-600 dark:text-blue-400 mb-2">Principal</p>
-                            <p class="text-gray-600 dark:text-gray-400">With over 20 years of experience in
-                                education, Mr. Joel leads our school with vision and dedication.</p>
+                            <p class="text-blue-600 dark:text-blue-400 mb-2">Board Director of JSF</p>
+                            <p class="text-gray-600 dark:text-gray-400">I am deeply passionate about developing my spiritual practice by helping young people pursue their education. I provide mentorship and support, empowering them to succeed academically.</p>
                         </div>
                     </div>
 
@@ -201,8 +199,8 @@
                             <img src="{{ asset('img/mrnen.jpg') }}"
                                 alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Neou Nen</h4>
-                            <p class="text-blue-600 dark:text-blue-400 mb-2">Head of English Department</p>
-                            <p class="text-gray-600 dark:text-gray-400">Passionate about inspiring smiles, teaching English, leadership development, and creating positive change through education and digital content..</p>
+                            <p class="text-blue-600 dark:text-blue-400 mb-2">Founder of JSF</p>
+                            <p class="text-gray-600 dark:text-gray-400">Passionate about inspiring smiles, teaching English, leadership development, and creating positive change through education and digital content.</p>
                         </div>
                     </div>
 
@@ -234,9 +232,7 @@
                                 class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr.Song Piseth </h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Cyber & Development</p>
-                            <p class="text-gray-600 dark:text-gray-400">Passionate about helping students build strong
-                                foundations in cybersecurity and development while nurturing creativity and problem-solving
-                                skills.</p>
+                            <p class="text-gray-600 dark:text-gray-400">Passionate about helping students build a strong foundation in cybersecurity and coding for website development and problem solving.</p>
                         </div>
                     </div>
                 </div>
@@ -311,56 +307,75 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-16 bg-gray-100 dark:bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">About JSF Scholarship
-            </h2>
+<section id="about" class="py-16 bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">
+            About JSF Scholarship
+        </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div data-aos="fade-right">
-                    <h3 id="history" class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Our History
-                    </h3>
-                    <p class="text-gray-700 dark:text-gray-300 mb-6">
-                        Founded in 2025, JSF Scholarship has been at the forefront of providing quality
-                        education
-                        to students in our community. Our journey began with a small group of dedicated educators
-                        and has
-                        grown into a thriving educational institution serving hundreds of students each year.
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300">
-                        Over the years, we have continuously evolved our curriculum and teaching methodologies to
-                        meet
-                        the changing needs of our students and the demands of the modern world.
-                    </p>
-                </div>
-                <div data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80"
-                        alt="School History" class="w-full h-64 object-cover rounded-lg shadow-lg">
-                </div>
+        <!-- Combined grid for better structure -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- History Text -->
+            <div data-aos="fade-right">
+                <h3 id="history" class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
+                    Our History
+                </h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">
+                    The history of the JFS Scholarship Foundation began in 2025 when I faced financial challenges 
+                    in supporting my nephews' university education. Recognizing the importance of higher education, 
+                    I initially reached out to Joel and his family for assistance. However, I hesitated, feeling 
+                    it might not be appropriate to ask for help specifically for my nephews.
+                </p>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">
+                    Instead of seeking personal aid, on 12 November 2025, I envisioned creating a broader impact. 
+                    I realized that many young individuals encounter similar obstacles in pursuing their academic 
+                    goals. This inspired me to establish the Joel Scholarship Foundation (JFS Scholarship), aimed 
+                    at providing financial support to deserving students eager to further their education.
+                </p>
+                <p class="text-gray-700 dark:text-gray-300">
+                    The foundation embodies the spirit of community and empowerment, helping potential young 
+                    leaders overcome financial barriers and achieve their dreams.
+                </p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                <div data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                        alt="Mission and Vision" class="w-full h-64 object-cover rounded-lg shadow-lg">
-                </div>
-                <div data-aos="fade-left">
-                    <h3 id="mission" class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Mission &
-                        Vision</h3>
-                    <p class="text-gray-700 dark:text-gray-300 mb-6">
-                        <strong>Our Mission:</strong> To provide a nurturing and inclusive learning environment that
-                        empowers
-                        students to achieve their full potential academically, socially, and emotionally.
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300">
-                        <strong>Our Vision:</strong> To be a leading educational institution that inspires lifelong
-                        learning,
-                        fosters innovation, and develops responsible global citizens.
-                    </p>
-                </div>
+            
+            <!-- History Image -->
+            <div data-aos="fade-left" class="order-first md:order-last">
+                <img 
+                    src="{{ asset('img/History.jpg') }}"
+                    alt="Students studying together in a library"
+                    class="w-full h-auto md:h-96 object-cover rounded-lg shadow-lg"
+                >
             </div>
         </div>
-    </section>
+
+        <!-- Mission & Vision Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <!-- Mission Image -->
+            <div data-aos="fade-right">
+                <img 
+                    src="{{ asset('img/Mission.jpg ') }}"
+                    alt="Students collaborating on a project"
+                    class="w-full h-auto md:h-96 object-cover rounded-lg shadow-lg"
+                >
+            </div>
+            
+            <!-- Mission Text -->
+            <div data-aos="fade-left">
+                <h3 id="mission" class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
+                    Mission & Vision
+                </h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-6">
+                    <strong class="text-blue-600 dark:text-blue-400">Vision:</strong> 
+                    To see every underprivileged youth in rural Cambodia achieve their full potential through quality education, becoming leaders who drive positive change in their communities.
+                </p>
+                <p class="text-gray-700 dark:text-gray-300">
+                    <strong class="text-blue-600 dark:text-blue-400">Mission:</strong> 
+                    We identify, support, and empower talented students from rural Cambodian communities by providing comprehensive financial assistance for higher education, while fostering a culture of academic excellence, social responsibility, and community service. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Gallery Section -->
     <!-- <section id="gallery" class="py-16 bg-white dark:bg-gray-800">
