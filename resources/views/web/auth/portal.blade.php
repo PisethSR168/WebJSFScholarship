@@ -419,58 +419,10 @@
                                 placeholder="Re-enter password">
                         </div>
                     </div>
-
-                    <!-- Custom Fields (Optional based on user's schema) -->
-                    <!-- Assuming standard Laravel User model for now, but keeping fields in UI if they might be used later or stored in JSON/related table. 
-                     If the User model doesn't have these columns, it will throw an error on create. 
-                     For safety, I'll comment out the extra fields that are likely NOT in the default User model, 
-                     or I'll include them but they won't typically do anything without controller modification.
-                     Given I can't modify the migration easily without more info, I will rely on standard 'name', 'email', 'password'.
-                     The user's template had: First Name, Last Name, Phone, DOB, Education, Field, Motivation.
-                     Standard Laravel has: Name, Email, Password.
-                     I mapped First/Last to 'Name' above. 
-                     I will add the other fields as hidden or non-functional for now unless I see the User migration. 
-                     Actually, I should check the User migration or model to be safe. But to be safe for now, I will include them as inputs but they might not be saved unless the controller is updated.
-                     The RegisterController simply does:
-                     User::create([ 'name' => data['name'], 'email' => ..., 'password' => ... ])
-                     So extra fields will be ignored. I will keep them in the form for visual fidelity to the user's request.
-                -->
-
                     <div class="form-group">
                         <label for="phone">Phone Number</label> <!-- Changed to optional or just visual -->
                         <input type="tel" id="phone" name="phone" placeholder="+855 12 345 678">
                     </div>
-
-                    <!-- 
-                <div class="form-group">
-                    <label for="dob">Date of Birth *</label>
-                    <input type="date" id="dob" required>
-                </div>
-                -->
-
-                    <!--
-                <div class="form-group">
-                    <label for="education">Current Education Level *</label>
-                    <select id="education" required>
-                        <option value="">Select your education level</option>
-                        <option value="high-school">High School</option>
-                        <option value="undergraduate">Undergraduate</option>
-                        <option value="graduate">Graduate</option>
-                        <option value="postgraduate">Postgraduate</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="field">Field of Study *</label>
-                    <input type="text" id="field" required placeholder="e.g., Computer Science, Medicine">
-                </div>
-
-                <div class="form-group">
-                    <label for="motivation">Why do you want to apply for this scholarship? *</label>
-                    <textarea id="motivation" required placeholder="Tell us about your goals and why you deserve this scholarship..."></textarea>
-                </div>
-                -->
-
                     <button type="submit" class="btn">Register</button>
 
                     <div class="form-switch">
