@@ -188,7 +188,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
                             <img src="{{ asset('img/mrjoel.jpg') }}"
-                                alt="Principal" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                                alt="Principal" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Joel</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Principal</p>
                             <p class="text-gray-600 dark:text-gray-400">With over 20 years of experience in
@@ -198,8 +198,8 @@
 
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
-                            <img src="{{ asset('img/mrnen.jpg') }}" alt="Teacher"
-                                alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <img src="{{ asset('img/mrnen.jpg') }}"
+                                alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr. Neou Nen</h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Head of English Department</p>
                             <p class="text-gray-600 dark:text-gray-400">Passionate about inspiring smiles, teaching English, leadership development, and creating positive change through education and digital content..</p>
@@ -231,7 +231,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center student-card">
                             <img src="{{ asset('img/piseth.jpg') }}" alt="Teacher"
-                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                                class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
                             <h4 class="text-xl font-bold text-gray-800 dark:text-white">Mr.Song Piseth </h4>
                             <p class="text-blue-600 dark:text-blue-400 mb-2">Cyber & Development</p>
                             <p class="text-gray-600 dark:text-gray-400">Passionate about helping students build strong
@@ -250,13 +250,13 @@
     <!-- Top Students Section -->
     <section class="py-16 bg-white dark:bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Top Students</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Current Awardees</h2>
 
             <div class="swiper studentSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-    <img src="{{ asset('img/Chhorn Ponchai.jpg') }}" alt="Portrait of Chhorn Ponchai" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+    <img src="{{ asset('img/Chhorn Ponchai.jpg') }}" alt="Portrait of Chhorn Ponchai" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
     <h4 class="text-xl font-bold text-gray-800 dark:text-white">Chhorn Ponchai</h4>
     <p class="text-blue-600 dark:text-blue-400 mb-2">Architecture</p>
     <p class="text-gray-600 dark:text-gray-400">I'm 18 years old and currently studying Architecture at Build Bright University. My key skills include technical design and effective communication.</p>
@@ -265,14 +265,14 @@
 
                     <div class="swiper-slide">
 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
-    <img src="{{ asset('img/sophanit.jpg') }}" alt="Portrait of Nery Sophanit" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+    <img src="{{ asset('img/sophanit.jpg') }}" alt="Portrait of Nery Sophanit" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover transition-transform duration-300 hover:scale-110">
     <h4 class="text-xl font-bold text-gray-800 dark:text-white">Nery Sophanit</h4>
     <p class="text-blue-600 dark:text-blue-400 mb-2">Civil Engineering & Construction</p>
     <p class="text-gray-600 dark:text-gray-400">I'm 20 years old and currently studying Civil Engineering and Construction at Build Bright University. My key skills include structural planning and project management.</p>
 </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center student-card">
                             <img src="{{ asset('img/rith.jpg') }}"
                                 alt="Student" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
@@ -303,7 +303,7 @@
                             <p class="text-gray-600 dark:text-gray-400">Developed award-winning mobile app for
                                 community service</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="swiper-pagination mt-6"></div>
             </div>
@@ -363,7 +363,7 @@
     </section>
 
     <!-- Gallery Section -->
-    {{-- <section id="gallery" class="py-16 bg-white dark:bg-gray-800">
+    <!-- <section id="gallery" class="py-16 bg-white dark:bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Photo Gallery</h2>
 
@@ -399,7 +399,7 @@
                 </a>
             </div>
         </div>
-    </section> --}}
+    </section> -->
 @endsection
 
 @push('scripts')

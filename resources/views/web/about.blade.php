@@ -257,7 +257,7 @@
                 </div>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="#history"
-                        class="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl">
+                        class="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-50 transition duration-300 shadow-lg hover:shadow-xl dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
                         Our History
                     </a>
                     <a href="#values"
@@ -265,7 +265,7 @@
                         Core Values
                     </a>
                     <a href="#objectives"
-                        class="px-8 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition duration-300 shadow-lg hover:shadow-xl">
+                        class="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-50 transition duration-300 shadow-lg hover:shadow-xl dark:bg-gray-800 dark:text-blue-300 dark:hover:bg-gray-700">
                         Objectives
                     </a>
                 </div>
@@ -281,7 +281,7 @@
                     Our Purpose
                 </span>
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                    Vision & <span class="text-blue-600 dark:text-blue-400">Mission</span>
+                    Vision & Mission<span class="text-blue-600 dark:text-blue-400"></span>
                 </h2>
                 <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                     Guiding principles that shape our educational approach and future aspirations
@@ -483,14 +483,14 @@
     </section>
 
     <!-- Core Values Section -->
-    <section id="values" class="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section id="values" class="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="text-center mb-16" data-aos="fade-up">
                 <span class="inline-block px-6 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
                     Our Foundation
                 </span>
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                    Core <span class="text-purple-600 dark:text-purple-400">Values</span>
+                    Core Values<span class="text-purple-600 dark:text-purple-400"></span>
                 </h2>
                 <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                     The guiding principles that shape our approach and define our impact
@@ -500,59 +500,57 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Generosity -->
-                <div class="value-card value-card-blue text-white animate-fadeIn delay-1" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-8">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center value-card-icon">
-                                <i class="fas fa-heart text-3xl"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-center">Generosity</h3>
-                        <div class="w-16 h-1 bg-white/40 mx-auto mb-6 rounded-full"></div>
-                        <p class="text-lg text-blue-100 leading-relaxed text-center mb-6">
-                            We believe in the transformative power of giving. Our scholars are encouraged to share their knowledge, skills, and resources with their communities, creating a cycle of generosity that uplifts everyone.
-                        </p>
-                        <div class="text-center">
-                            <i class="fas fa-hand-holding-heart text-2xl opacity-75"></i>
-                        </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl card-hover" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg value-card-icon">
+                        <i class="fas fa-heart text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+                        Generosity
+                    </h3>
+                    <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-center mb-6">
+                        We believe in the transformative power of giving. Our scholars are encouraged to share their
+                        knowledge, skills, and resources with their communities, creating a cycle of generosity that
+                        uplifts everyone.
+                    </p>
+                    <div class="text-center">
+                        <i class="fas fa-hand-holding-heart text-2xl text-gray-400 dark:text-gray-500 opacity-75"></i>
                     </div>
                 </div>
 
                 <!-- Perseverance -->
-                <div class="value-card value-card-purple text-white animate-fadeIn delay-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-8">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center value-card-icon">
-                                <i class="fas fa-mountain text-3xl"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-center">Perseverance</h3>
-                        <div class="w-16 h-1 bg-white/40 mx-auto mb-6 rounded-full"></div>
-                        <p class="text-lg text-purple-100 leading-relaxed text-center mb-6">
-                            We celebrate resilience and determination. Our scholars learn to overcome challenges, adapt to obstacles, and persist in their educational journey, building character and strength that lasts a lifetime.
-                        </p>
-                        <div class="text-center">
-                            <i class="fas fa-trophy text-2xl opacity-75"></i>
-                        </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg value-card-icon">
+                        <i class="fas fa-mountain text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+                        Perseverance
+                    </h3>
+                    <div class="w-16 h-1 bg-gradient-to-r from-purple-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-center mb-6">
+                        We celebrate resilience and determination. Our scholars learn to overcome challenges, adapt to obstacles, and persist in their educational journey, building character and strength that lasts a lifetime.
+                    </p>
+                    <div class="text-center">
+                        <i class="fas fa-trophy text-2xl text-gray-400 dark:text-gray-500 opacity-75"></i>
                     </div>
                 </div>
 
                 <!-- Unity -->
-                <div class="value-card value-card-pink text-white animate-fadeIn delay-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-8">
-                        <div class="flex justify-center mb-6">
-                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center value-card-icon">
-                                <i class="fas fa-users text-3xl"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-center">Unity</h3>
-                        <div class="w-16 h-1 bg-white/40 mx-auto mb-6 rounded-full"></div>
-                        <p class="text-lg text-pink-100 leading-relaxed text-center mb-6">
-                            We believe in the power of community. By working together, supporting each other, and sharing common goals, we create stronger networks and more sustainable impact that benefits entire communities.
-                        </p>
-                        <div class="text-center">
-                            <i class="fas fa-handshake text-2xl opacity-75"></i>
-                        </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg value-card-icon">
+                        <i class="fas fa-users text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+                        Unity
+                    </h3>
+                    <div class="w-16 h-1 bg-gradient-to-r from-pink-500 to-pink-600 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-center mb-6">
+                        We believe in the power of community. By working together, supporting each other, and sharing common goals, we create stronger networks and more sustainable impact that benefits entire communities.
+                    </p>
+                    <div class="text-center">
+                        <i class="fas fa-handshake text-2xl text-gray-400 dark:text-gray-500 opacity-75"></i>
                     </div>
                 </div>
             </div>
@@ -567,7 +565,7 @@
                     Our Focus Areas
                 </span>
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                    Strategic <span class="objectives-gradient-text">Objectives</span>
+                    Strategic Objectives<span class="objectives-gradient-text"></span>
                 </h2>
                 <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
                     Three core pillars that guide our mission to transform lives through education
@@ -643,7 +641,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+    <!-- <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center text-white" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">
@@ -664,7 +662,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <script>
         function toggleContent(year) {
